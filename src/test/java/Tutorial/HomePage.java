@@ -27,6 +27,7 @@ public class HomePage extends Base {
 	}
 	
 	@Test(dataProvider = "getData")
+//	@Test(dataProvider = "getDataFromDataProvider")
 	public void basePageNavigation(String userName, String passWord, String text) throws IOException {
 		
 		webDriver.get(prop.getProperty("baseURL"));
@@ -49,7 +50,9 @@ public class HomePage extends Base {
 				{"mngr1336","dAnavUq"},
 				{"invalid","valid"},
 				{"valid","invalid"},
-				{"invalid","invalid"}
+				{"invalid","invalid"},
+				
+				{"abc@gmail.com","12354"}
 			};
 		}
 		else {
