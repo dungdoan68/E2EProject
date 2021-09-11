@@ -37,7 +37,7 @@ public class Base {
 			webDriver = new FirefoxDriver();
 			
 		} else if (value.equals("IE")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\IEDriver.exe");
 			webDriver = new InternetExplorerDriver();
 			
 		} 	
