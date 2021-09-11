@@ -23,7 +23,8 @@ public class Base {
 	public WebDriver initialBrowsers(String key) throws IOException {
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream
-				("D:\\Desktop\\GITDemo\\E2EProject\\src\\test\\java\\resource\\global.propoties");
+				(System.getProperty("user.dir")+"\\src\\test\\java\\resource\\global.propoties");
+		//i edit line
 		prop.load(fis);
 		String value = prop.getProperty(key);
 		System.out.println(value); 
